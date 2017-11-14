@@ -1,0 +1,11 @@
+body, html {
+	font-family: $font-stack;
+	font-size: 13px;
+	background: $black;
+}
+
+// Style selected text.
+::selection {
+	color: $black;
+	background: $accent1;
+}
