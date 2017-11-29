@@ -2,17 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<meta name="description" content="Live location of earthquakes on our earthsurface." />
+	<meta name="description" content="An example app to fetch data from Spotify." />
 
 	<link rel="stylesheet" type="text/css" href="style/screen.min.css" />
 
-	<title>Live Earthquakes</title>
+	<title>Spotify Artist info</title>
 </head>
 <body>
 
-	<canvas id="canvas" width="800" height="600">
-		<p class="noCanvas">Sorry, your browser don`t support Canvas in HTML5</p>
-	</canvas>
+	<header class="wrap">
+		<h1>Get the artist info</h1>
+
+		<input class="large__header main--input" type="text" name="artist" placeholder="Type the name of an artist..." />
+	</header>
+
+	<main class="wrap result">
+		<p class="animated">Has <span class="followers">000000</span> followers on Spotify.</p>
+		
+		<section class="animated--level2 genres">
+			<h2 class="header__small">Makes the following genres:</h2>
+			<div class="genres__holder">
+				<span class="genre">rock</span>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		
+	</footer>
+
 
 	<script src="script/app.min.js"></script>
 </body>

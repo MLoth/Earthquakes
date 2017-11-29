@@ -31,12 +31,12 @@ gulp.task('script', function() {
 	
 gulp.task('html', function() {
 	gulp.src('./src/*.html')
-        .pipe(w3cjs())
-        .pipe(w3cjs.reporter())
-        .pipe(htmlmin({
-        	collapseWhitespace: true
-        }))
-    	.pipe(gulp.dest('./dist'));;
+		.pipe(w3cjs())
+		.pipe(w3cjs.reporter())
+		// .pipe(htmlmin({
+		// 	collapseWhitespace: true
+		// }))
+		.pipe(gulp.dest('./dist'));;
 	livereload.reload();
 });
 

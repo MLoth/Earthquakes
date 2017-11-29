@@ -1,11 +1,15 @@
 body, html {
 	font-family: $font-stack;
-	font-size: 13px;
-	background: $black;
+	font-size: 16px;
+	background: $white;
 }
 
 // Style selected text.
 ::selection {
 	color: $black;
-	background: $accent1;
+	background: $green;
+}
+
+.wrap {
+	@include wrap( 20px, 20px );
 }
