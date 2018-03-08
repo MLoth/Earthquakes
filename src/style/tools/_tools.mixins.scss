@@ -8,7 +8,6 @@
 // Media Query mixin
 // @include mq(#point, #query1, #query2);
 //
-
 @mixin mq($breakpoint, $query1: min, $query2: width) {
     @media (#{$query1}-#{$query2}: $breakpoint) {
         @content;

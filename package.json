@@ -3,15 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
   },
   "repository": "https://github.com/MLoth/Earthquakes.git",
   "author": "mtijn.loth@gmail.com <7655827+MLoth@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "extract-text-webpack-plugin": "^3.0.2",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1"
+    "path": "^0.12.7",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.0.0"
   },
   "description": "Show a map of seismological activities in the world."
 }
